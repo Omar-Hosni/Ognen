@@ -1,0 +1,114 @@
+.moveModalBot {
+  position: fixed;
+  bottom: 585px;
+  right: 390px;
+  animation: move 1s ease-in;
+}
+.modalBackground {
+  background-color: #c8c8c8;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+.modalContainer {
+    width: 0;
+    height: 0;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+@keyframes moved {
+    0% {
+      transform: translateY(300px);
+      opacity: 0;
+    }
+    100% {
+      position: fixed;
+      bottom: 585px;
+      right: 390px;
+      opacity: 2;
+    }
+}
+@keyframes move {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+      position: fixed;
+      bottom: 585px;
+      right: 390px;
+      opacity: 2;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .moveModalBot {
+      position: fixed;
+      bottom: 585px;
+      right: 300px;
+      animation: move 1s ease-in;
+  }
+  .modalBackground {
+      background-color: #c8c8c8;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      float: right;
+    }
+   
+    .modalContainer {
+        width: 0;
+        height: 0;
+    }
+}
